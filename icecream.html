@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="icecream.css">
+</head>
+
+<body>
+
+  <div class="about">
+
+<div class="logo">
+    <a href="Creative Minds.html">
+    <img src="file:///D:/IT/IMAGES/logo.webp" width="180px" height="180px">
+  </a>
+  </div>
+
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+             
+              <li class="nav-item">
+                  <a href="Recepies.html" class="nav-link">Recepies</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">    
+                <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                </li>
+                
+            <li class="nav-item">
+              <div class="dropdown">
+              <a href="#" class="nav-social"> 
+                <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                <div class="dropdown-content">
+                  <h1> 0718452895</h1> 
+                  <h1> 0712345678</h1>     
+
+                </div>
+              </div>
+            </li>
+          </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</div>
+
+  
+
+<div class="text">
+<b>We made a simple, delicious vanilla ice cream to enjoy at anytime. Here is how you can make it too: </b><br><br>
+
+<b>Milk powder mixture:</b><br>
+
+1/3 cup milk powder<br>
+1/3 cup water<br><br>
+
+<b>Whipped cream mixture</b><br>
+
+1 cup heavy whipping cream<br>
+1 1/2 tsp vanilla extract<br>
+1/4 cup sugar<br><br>
+
+<b>Direction</b><br>
+To make the Milk powder mixture you'll mix the milk powder and water, in a bowl, really well until there are no lumps.<br>
+<br>In a bigger bowl, combine the whipped cream and vanilla extract untl you get soft peaks <br>
+Gradually add your sugar while mixing and later your milk powder mixture, mix until everything becomes smooth. <br>
+<br> Pour it in a plastic or a glass container, cover it with plastic wrap and put it in the freezer for 2 hours<br><br>
+Remove it from the freezer, give it a mix so that it doest crystalise and put it back in the freezer for another 2 hours. <br> Repeat this process one more time to get it smooth.The more you stir it the creamer it gets. <br> freeze it one last time for 8 hours or overnight. <br><br>
+Serve it in a small bowl or an icecream cone and top it off with some of the chocolate sauce that is in the <a href="chocolate cake.html"> Chocolate Cake Recepie</a> <br>or turn it into a milkshake and enjoy.<br><br>
+
+
+
+
+It tastes so good you have to try it!<br>
+Share it with your friends and those who love icecream <br>and make it together! <br>Thank you!
+
+
+</div>
+
+<div class="video">
+  <iframe class="responsive" src="https://www.youtube.com/embed/PxwT1IMWpBY">
+</iframe>
+</div>
+
+</div>
+
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+ hamburger.classList.toggle("active");
+ navMenu.classList.toggle("active");}
+
+ const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+ hamburger.classList.remove("active");
+ navMenu.classList.remove("active");
+}
+</script>
+
+
+
+</body>
+</html>

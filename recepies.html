@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="recepies.css">
+
+</head>
+<body>
+
+  <div class="about2"> 
+    
+    
+    <div class="logo">
+  <a href="Creative Minds.html">
+  <img src="file:///D:/IT/IMAGES/logo.webp">
+</a>
+</div>
+
+    
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+              
+              <li class="nav-item">
+                  <a href="Recepies.html" class="nav-link">Recepies</a>
+              </li>
+              <li class="nav-item">
+                  <a href="aboutus.html">About us</a>
+              </li>
+
+
+               
+              <li class="nav-item">    
+                <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                <a href="#" class="nav-social"> 
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                  <div class="dropdown-content">
+                    <h1> 0718452895</h1> 
+                    <h1> 0712345678</h1>     
+
+                  </div>
+                </div>
+              </li>
+
+          </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</div>
+
+
+
+    <div class="Recepies">
+        <h1>
+          <a href="chocolate cake.html">
+          <img src="file:///D:/IT/IMAGES/CHOCOLATE%20cake.webp">
+          </a>
+
+          <p1>
+         Delicious chocolate cake covered in simple chocolate sauce.
+          </p1>
+          <br>
+
+
+          <a href="Ma'amool.html">
+            <img src="file:///D:/IT/IMAGES/maamool.jpg">
+            </a>
+        
+            <p1>
+             Simple Ma’amool recipe made with love.
+            </p1>
+        
+            <br>
+            <a href="sorbet.html">
+              <img src="file:///D:/IT/IMAGES/sorbet.webp">
+              </a>
+          
+              <p1>
+              Easiest Sorbet recipe for the Summer!
+              </p1>
+              <br>
+          
+              <a href="icecream.html">
+              <img src="file:///D:/IT/IMAGES/icecream.jpg">
+              </a>
+          
+              <p1>
+              Delicious vanilla ice cream to cool the heat!
+              </p1>
+              <br>
+          
+          
+              <a href="betifor.html">
+              <img src="file:///D:/IT/IMAGES/bettifore.webp">
+              </a>
+          
+              <p1>
+               Melts in your mouth, crispy Betifor recipe
+              </p1>
+              <br>
+          
+              <a href="lazycake.html">
+              <img src="file:///D:/IT/IMAGES/lazy.webp">
+              </a>
+          
+              <p1>
+              Simple Sunday lazy cake recipe!
+              </p1>
+           <br>
+          
+           <a href="dessert.html">
+           <img src="file:///D:/IT/IMAGES/layered.webp">
+           </a>
+          
+           <p1>
+          Scrumptious layered desert for any time of the year!
+          </p1>        
+
+      </h1>
+      </div>
+      </div>
+
+
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      
+      hamburger.addEventListener("click", mobileMenu);
+      
+      function mobileMenu() {
+       hamburger.classList.toggle("active");
+       navMenu.classList.toggle("active");}
+      
+       const navLink = document.querySelectorAll(".nav-link");
+      
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+      
+      function closeMenu() {
+       hamburger.classList.remove("active");
+       navMenu.classList.remove("active");
+      }
+      </script>
+      
+
+</body>
+</html>

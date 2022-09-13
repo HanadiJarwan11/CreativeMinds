@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="cake.css">
+</head>
+
+<body>
+
+  <div class="about">
+    
+ <div class="logo">
+    <a href="Creative Minds.html">
+    <img src="file:///D:/IT/IMAGES/logo.webp"width="200px" height="200px">
+  </a>
+  </div>
+
+
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+             
+              <li class="nav-item">
+                  <a href="Recepies.html" class="nav-link">Recepies</a>
+              </li>
+              <li class="nav-item">
+                  <a href="aboutus.html">About us</a>
+              </li>
+
+              <li class="nav-item">    
+                <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                </li>
+                
+            <li class="nav-item">
+              <div class="dropdown">
+              <a href="#" class="nav-social"> 
+                <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                <div class="dropdown-content">
+                  <h1> 0718452895</h1> 
+                  <h1> 0712345678</h1>     
+
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        </nav>
+
+        </div>
+
+ 
+
+
+<div class="text">
+
+
+
+  <b>We made a delicious chocolate cake topped off with some rich chocolate sauce. <br><br>Here is the recepie and the directions to make it:</b><br>
+2 eggs (room temp)<br>
+3/4 cup of sugar<br>
+1 teaspoon vanilla extract<br>
+1/4 cup of oil<br>
+3/4 cup of milk (room temp)<br><br>
+
+<b>For the dry ingredients: (sifted)</b><br>
+1 1/2 cup of flour<br>
+1/2 cup of cocoa powder<br>
+1 teaspoon of baking powder<br>
+1 teaspoon of baking soda<br>
+1 teaspoon of nescafé<br>
+pinch of salt<br><br>
+
+<b>For the chocolate sauce:</b><br>
+1/2 cup of cocoa powder<br>
+1/2 tin of cream<br>
+1/2 tin of condensed milk<br><br>
+
+<b>Direction:</b>
+<br>
+Grab a large bowl and crack in your room temperatured eggs and add your sugar.<br> At this point, make sure to preheat your oven at 180 degree celsius.<br><br> Mix your wet ingredients until light and fluffy and has lightened in color.<br>Pour the vanilla extract and mix, oil and milk goes in next and mix again.<br> Add in all the dry ingredients and mix until combined, <b>dont over mix it in this step!</b><br> <br>Pour your hot water and pour the batter in small individual ramekins or a cake pan.<br> Bake it in the oven for 20-25 minutes or until you insert a toothpick inside the cake and it come out clean then it's ready.<br><br>
+
+To make the chocolate sauce, simmer the cocoa powder, cream and the condensed milk together in a pot <br>and pour it ontop of the cake once it comes out the oven. The sauce is opptional but it makes the cake super moist<br><br>
+Hope you enjoied the recepie, share it with your friends and make it together! <br>Thank you!
+
+
+
+
+
+</div>
+
+<div class="video">
+  <iframe class="responsive" src="https://www.youtube.com/embed/Cy8cqlcb-uQ">
+</iframe>
+</div>
+
+</div>
+
+
+
+
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+ hamburger.classList.toggle("active");
+ navMenu.classList.toggle("active");}
+
+ const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+ hamburger.classList.remove("active");
+ navMenu.classList.remove("active");
+}
+</script>
+
+
+
+</body>
+</html>

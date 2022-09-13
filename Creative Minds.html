@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+  <div class="about"> 
+
+    <p class="logo">
+      <a href="Creative Minds.html">
+      <img src="file:///D:/IT/IMAGES/logo.webp">
+    </a>
+    </p>
+    
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+              
+              <li class="nav-item">
+                  <a href="Recepies.html" class="nav-link"> Recepies</a>
+              </li>
+              <li class="nav-item">
+                  <a href="aboutus.html" class="nav-link">About us</a>
+              </li>
+
+
+              <li class="nav-item">    
+                  <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                    <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                  </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                <a href="#" class="nav-social"> 
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                  <div class="dropdown-content">
+                    <h1> 0718452895</h1> 
+                    <h1> 0712345678</h1>     
+
+                  </div>
+                </div>
+              </li>
+          </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</div>
+
+
+<div class="web">
+
+  Welcome to Creative Mind's website where you can view our Youtube Recepies! We are Hadeel and Haneen, the creators of 
+  Creative Minds Youtube channel. Hope you enjoy and try our recepies. Tell us what you want us to bake for you next!
+</div>
+
+
+<div class="allslide">
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/CHOCOLATE%20cake.webp">
+  <div class="text">Chocolate cake</div>
+</div>
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/maamool.jpg">
+  <div class="text"> Ma'amool</div>
+</div>
+
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/sorbet.webp"></a>
+  <div class="text"> Sorbet</div>
+</div>
+
+
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/icecream.jpg">
+  <div class="text"> Icecream</div>
+</div>
+
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/bettifore.webp">
+  <div class="text"> Betifore</div>
+</div>
+
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/lazy.webp">
+  <div class="text"> Lazycake</div>
+</div>
+
+<div class="slideimgs">
+  <img src="file:///D:/IT/IMAGES/layered.webp">
+  <div class="text"> Dessert</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+
+  
+</div>
+
+
+</div>
+
+
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+ hamburger.classList.toggle("active");
+ navMenu.classList.toggle("active");}
+
+ const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+ hamburger.classList.remove("active");
+ navMenu.classList.remove("active");
+}
+</script>
+
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slideimgs");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active2";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+</body>
+</html>

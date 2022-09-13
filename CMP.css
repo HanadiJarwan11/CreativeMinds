@@ -1,0 +1,135 @@
+html {
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 0%;
+    min-width: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+body
+{
+  position: fixed;
+  max-height: 100%;
+  min-height: 0%;
+  max-width: 100%;
+  min-width: 0%;
+  margin-top:10px;
+  margin-left: 10px;
+  margin-right: 170px;
+  margin-bottom: 30px;
+  background-color: #BCA4E6;
+}
+
+.menuimg
+{
+  width: 40px;
+  cursor: pointer;
+    display: inline-block;
+  }
+
+
+.about
+{
+  text-align:right;
+  font-size: 20px;
+  }
+
+  .about ul li img
+  {
+    display: block;
+  }
+
+  .about ul li
+  {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0pX;
+    margin-top: 0PX;
+    }
+
+    .about ul li a
+    {
+      display: inline-block;
+      position: relative;
+      color: purple;
+    }
+
+  .about ul li a:after
+  {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: purple;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+  }
+  .about ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    height: 2px;
+  }
+
+  .about ul li a
+  {
+  text-decoration: none;
+  color: black;
+  }
+
+  .about
+  {
+    border-color:white;
+    border-width:medium;
+    border-radius: 20px;
+    border-style: solid;
+    height: 500px;
+    width: 280px;
+    box-shadow: 5px 5px 15px grey;
+    background-image:url(file:///D:/IT/IMAGES/hanadiii/Screenshot%202.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+  }
+
+
+  .logo
+  {
+  text-align: left;
+  margin-top:-185%;
+  margin-left: 3%;
+  }
+
+   .web
+  {
+    font-size: 130%;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: inherit;
+  }
+
+
+  .dropdown
+   {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+.menuu
+{
+  display: none;
+}
+
+
+  .line
+  {
+    display: none;
+    position:
+
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="betifor.css">
+</head>
+
+<body>
+
+  <div class="about">
+
+    <p class="logo">
+      <a href="Creative Minds.html">
+      <img src="file:///D:/IT/IMAGES/logo.webp"width="180px" height="180px">
+    </a>
+    </p>  
+
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a href="Recepies.html" class="nav-link"> Recepies</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html">About us</a>
+            </li>
+
+
+            <li class="nav-item">    
+                <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                </li>
+                
+            <li class="nav-item">
+              <div class="dropdown">
+              <a href="#" class="nav-social"> 
+                <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                <div class="dropdown-content">
+                  <h1> 0718452895</h1> 
+                  <h1> 0712345678</h1>     
+
+                </div>
+              </div>
+            </li>
+          </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</div>
+
+
+<div class="text">
+
+  You must try these soft and crunchy buiscuit that just melts in your mouth and cant get away with only one biscuit
+
+  and to make them you'll need:<br><br>
+
+  1cup butter<br>
+  1/2 + 1/4 cup powdered sugar<br>
+  2 egg yolks<br>
+  1 tsp vanilla extract<br>
+  A Pinch of salt<br>
+  1 tsp baking powder<br>
+  2 cups flour<br><br>
+
+  <b>Directions:</b><br><br>
+  Preheat your oven at 180 degrees celcius.
+  In a large bowl, mix your butter until it becomes fluffy.
+   <br>Add your powered sugar, vanilla and the egg yolks and miss them all toether well, until it becomes light and fluffy.
+   <br><br> Next that goes in is the baking powder and salt and mix. Gradually add your flour and fold it in with a spatula.
+   <br>Separate your mixture into 2 and you can flavour it with some cocoa powder. After your done, refrigerate it for 10 minutes.
+   <br><br> Now comes the fun part, shaping them. In this part you can use your Creativity and shape your dough.
+   <br>We used a biscuit maker and made little shapes. You can use cookie cutter, molds or even a fork like what we baked
+   in our <a href="Ma'amool.html"> Ma'amool recepie </a> .
+   <br><br>Once you are all done bake it in the oven for 10 minutes and enjoy it with a cup of coffee.<br><br>
+
+  Hope you enjoied the recepie, share it with your friends and make it together! <br>Thank you!
+
+</div>
+
+<div class="video">
+  <iframe class="responsive"
+src="https://www.youtube.com/embed/BoMjxVBDmn8">
+</iframe>
+</div>
+
+
+
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+ hamburger.classList.toggle("active");
+ navMenu.classList.toggle("active");}
+
+ const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+ hamburger.classList.remove("active");
+ navMenu.classList.remove("active");
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>

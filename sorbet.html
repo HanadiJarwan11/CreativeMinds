@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Minds</title>
+    <link rel="stylesheet" href="sorbet.css">
+</head>
+
+<body>
+
+  <div class="about">
+
+    <div class="logo">
+      <a href="Creative Minds.html">
+      <img src="file:///D:/IT/IMAGES/logo.webp"width="180px" height="180px">
+    </a>
+    </div>
+  
+
+    <div class="header">
+      <nav class="navbar">
+          
+          <ul class="nav-menu">
+            
+              <li class="nav-item">
+  
+                  <div class="dropdown">
+                  
+                      <a href="#" class="nav-link">Contact us</a>
+                       <div class="dropdown-content">
+                      <h1> hanadi_2003@yahoo.com</h1> 
+                      <h1> hadeel.m13@hotmail.com</h1>
+                    </div>
+                  </div>
+              </li>
+              
+              <li class="nav-item">
+                <a href="Recepies.html" class="nav-link"> Recepies</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html">About us</a>
+            </li>
+
+
+            <li class="nav-item">    
+                <a href="https://www.youtube.com/channel/UCDFzuogAGZmwKP_Oe8p7Vyw" class="nav-social">
+                  <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/YouTube_full-color_icon_(2017).svg.png"></a>
+                </li>
+                
+            <li class="nav-item">
+              <div class="dropdown">
+              <a href="#" class="nav-social"> 
+                <img src="file:///D:/IT/HTML/Atom/trial/CM%20food/valencia-spain-march-05-2017-260nw-593508881.webp">  </a>
+
+                <div class="dropdown-content">
+                  <h1> 0718452895</h1> 
+                  <h1> 0712345678</h1>     
+
+                </div>
+              </div>
+            </li>
+          </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</div>
+
+ 
+
+<div class="text">
+
+  <b>To make a frozen sorbe you'll need:</b><br><br>
+
+  1 frozen diced mango (any fruit of your choice)<br>
+  1-2 squeeses of lime<br>
+
+  <br>
+  <b>Direction:</b><br>
+
+  Put the mangos into a blender and blend until smooth <br>
+  Squeeze in your lime and blend for a few seconds. Pour it into a bowl
+  <br>
+  and you are ready to enjoy your frozen sorbet during the Summer!
+
+
+</div>
+
+<div class="video">
+  <iframe class="responsive"
+src="https://www.youtube.com/embed/8PXXWxvaK5c">
+</iframe>
+</div>
+
+
+</div>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+ hamburger.classList.toggle("active");
+ navMenu.classList.toggle("active");}
+
+ const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+ hamburger.classList.remove("active");
+ navMenu.classList.remove("active");
+}
+</script>
+
+
+</body>
+</html>
